@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import urllib.request as UOpen
 
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
@@ -12,7 +11,6 @@ urlLink = 'https://www.amazon.com/s?k=gtx+1650&ref=nb_sb_noss'
 # urlLink4 = 'https://www.amazon.com/s?k=gtx+1650&i=electronics&rh=p_72%3A1248879011%2Cp_36%3A1253506011&dc&qid=1583787867&rnid=386442011&ref=sr_nr_p_36_4'
 
 page = requests.get(urlLink, headers=headers)
-# page = UOpen.urlopen(urlLink).read()
 # print(page)
 
 
