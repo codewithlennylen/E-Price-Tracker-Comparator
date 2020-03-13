@@ -11,4 +11,8 @@ import scrapy
 class AmazoonItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    product_name = scrapy.Field()
+    product_author = scrapy.Field()
+    product_price = scrapy.Field()
+    product_imagelink = scrapy.Field()
     pass
